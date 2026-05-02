@@ -63,5 +63,5 @@ def test_endpoint():
     return {"message": "Backend is connected!"}
 
 # Run the app
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)

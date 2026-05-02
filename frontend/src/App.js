@@ -265,7 +265,7 @@ function App() {
     setError('');
     const dayOfYear = getDayOfYear(selectedDate);
     
-    fetch('http://127.0.0.1:5000/api/get-weather?lat=${location[0]}&lon=${location[1]}&day=${dayOfYear}')
+    fetch(`http://127.0.0.1:5000/api/get-weather?lat=${location[0]}&lon=${location[1]}&day=${dayOfYear}`)
       .then(response => response.ok ? response.json() : Promise.reject('Network response was not ok'))
       .then(data => {
         // Add dummy data for new features for demonstration
